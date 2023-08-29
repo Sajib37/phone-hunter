@@ -10,6 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+        .modalStyle{
+            font-size: larger;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+    </style>
+
 </head>
 <body>
     <header class="p-4 bg-emerald-400">
@@ -21,11 +29,28 @@
             <button id="search-btn" class="btn btn-active btn-accent">Search</button>
         </div>
     </section>
+    <div id="load-spinner" class="mt-16 flex justify-center hidden">
+        <span class="loading loading-spinner loading-lg text-orange-700"></span>
+    </div>
     <section id="phone-container" class="max-w-screen-xl mx-auto p-2 mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:px-6">
     </section>
     <div id="show-all-btn" class="text-center hidden max-w-screen-xl mx-auto mt-4">
         <button id="show-more" class="btn btn-active w-[90%] mx-4">Show More</button>
     </div>
+
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_1" class="modal ">
+            <form method="dialog" class="modal-box">
+               <div id="details-container"></div>
+
+                <div class="modal-action">
+                <button class="btn">Close</button>
+                </div>
+            </form>
+            </dialog>
+
+
 
     <script src="./js/javascript.js"></script>
 </body>
