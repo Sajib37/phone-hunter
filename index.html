@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajib's Phone Hunter</title>
+    <link rel="shortcut icon" href="./images/favicon.webp" type="image/x-icon">
+
+    <!-- Daisy UI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="p-4 bg-emerald-400">
+        <h1 class="text-3xl md:text-5xl font-bold text-center ">Phone Hunter</h1>
+    </header>
+    <section class=" bg-indigo-500 py-4 px-8">
+        <div class="max-w-screen-xl mx-auto">
+            <input id="search-text" type="text" placeholder="type here" class="input input-bordered input-warning w-full max-w-sm" />
+            <button id="search-btn" class="btn btn-active btn-accent">Search</button>
+        </div>
+    </section>
+    <section id="phone-container" class="max-w-screen-xl mx-auto p-2 mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:px-6">
+    </section>
+    <div id="show-all-btn" class="text-center hidden max-w-screen-xl mx-auto mt-4">
+        <button id="show-more" class="btn btn-active w-[90%] mx-4">Show More</button>
+    </div>
+
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
